@@ -38,14 +38,40 @@ function greetUser(name,timeOfDay) {
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
-function maxOfThree(num1,num2,num3) {
-  return Math.max(num1,num2,num3)
+function maxOfThree(num1, num2, num3) {
+  return Math.max(num1, num2, num3)
 }
 
-console.log('Exercise 6 Result:',maxOfThree(5, 10, 8))
+console.log('Exercise 6 Result:',maxOfThree(5, 17, 8))
 
 function calculateTip(billAmount, tipPercentage) {
-  return (billAmount  *tipPercentage) / 100
+  return (billAmount  *tipPercentage) /100
 }
 
 console.log('Exercise 7 Result:', calculateTip(50, 20))
+
+function convertTemperature(temperature, scale) {
+  if (scale === 'C') {
+      return (temperature *9/5) + 32
+  } else if (scale === 'F') {
+      return (temperature - 32) * 5/9
+  }
+}
+console.log('Exercise 8 Result:', convertTemperature(32, "F"))
+console.log(`Exercise 8 Result:`, convertTemperature (32, "C"))
+
+function basicCalculator(num1,num2,operation) {
+  switch (operation) {
+      case 'add':
+          return num1 +num2
+      case 'subtract':
+          return num1 -num2
+      case 'multiply':
+          return num1*num2
+      case 'divide':
+          if (num2 === 0)
+          return num1 / num2;
+      default: }
+}
+
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"))
