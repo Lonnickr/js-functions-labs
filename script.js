@@ -13,7 +13,11 @@ const maxOfTwoNumbers = (x, y) => {
   console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9))
   
 function isAdult(age21) {
-    return age = 18
+    if (age = 18) {
+      return "Aduit"
+    } else {
+      return "Minor"
+    }
 }
 
 console.log('Exercise 2 Result:', isAdult(21))
